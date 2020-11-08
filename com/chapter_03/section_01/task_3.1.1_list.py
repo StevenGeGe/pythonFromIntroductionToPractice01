@@ -16,6 +16,10 @@
 # 列表是有序集合，若访问列表中的任何元素，只需将该元素的位置或者索引告诉python即可。
 # 要访问列表元素，可指出列表的名称，再指出元素的索引，并将其放在括号内。
 
+# 列表索引访问
+# 在python3中，第一个元素的所索引为0，而不是1。这与列表操作的底层实现相关。
+# 访问第一个元素，为0； 访问第二个元素，为1； 访问最后一个元素，为-1。
+
 # 列表的写法
 bicycles_1 = ['a', 'b', 'c', 'd']
 print(bicycles_1)  # 输出: ['a', 'b', 'c', 'd']
@@ -32,3 +36,7 @@ print(bicycles_4[0])  # 输出: a
 
 bicycles_4 = ['aa', 'bb', 'cc', 'dd']
 print(bicycles_4[0].title())  # 输出: Aa
+
+# 索引访问
+bicycles_5 = ['trek', 'cannondale', 'redline', 'specialized']
+print(bicycles_5[-1])  #输出: specialized
