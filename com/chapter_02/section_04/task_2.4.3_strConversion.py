@@ -15,6 +15,8 @@
 # message= "Happy " + age + "rd Birthday"
 # print(message)
 
+# import this
+
 # 正确用法， 需要先将int类型的数据转换成字符串类型
 age2 = 20
 message2 = "Happy " + str(age2) + "rd Birthday"
