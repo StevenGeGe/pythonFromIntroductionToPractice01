@@ -23,7 +23,7 @@ for values in range(1, 5):
 print()
 
 # 直接赋值给列表
-number = list(range(1, 5))
+number = list(range(1, 11))
 print(number)  # 输出: [1, 2, 3, 4]
 
 # 指定步长
