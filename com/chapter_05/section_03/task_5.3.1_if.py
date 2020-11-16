@@ -33,3 +33,17 @@ elif age_3 < 18:
 else:
     print("Your admission cost is $10.")
 # 输出： Your admission cost is $5.
+
+
+# 使用多个elif代码块
+age_4 = 12
+if age_4 < 4:
+    price = 0
+elif age_4 < 18:
+    price = 5
+elif age_4 < 65:
+    price = 10
+else:
+    price = 5
+print("Your admission cost is $" + str(price) + ".")
+# 输出： Your admission cost is $5.
