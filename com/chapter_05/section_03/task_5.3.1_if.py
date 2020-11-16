@@ -47,3 +47,20 @@ else:
     price = 5
 print("Your admission cost is $" + str(price) + ".")
 # 输出： Your admission cost is $5.
+
+
+# 省略else代码块
+# Python并不要求if-elif 结构后面必须有else 代码块。
+# 在有些情况下，else 代码块很有用；
+# 而在其他一些情况下，使用一条elif 语句来处理特定的情形更清晰：
+age_5 = 12
+if age < 4:
+    price = 0
+elif age < 18:
+    price = 5
+elif age < 65:
+    price = 10
+elif age >= 65:
+    price = 5
+print("Your admission cost is $" + str(price) + ".")
+# 输出： Your admission cost is $10.
