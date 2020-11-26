@@ -13,5 +13,5 @@
 file_name = 'programming.txt'
 
 with open(file_name, 'w') as file_object:
-    file_object.write('i love xiKa')
-    file_object.write('i love all day')
+    file_object.write('i love xiKa.\n')
+    file_object.write('i love all day.\n')
