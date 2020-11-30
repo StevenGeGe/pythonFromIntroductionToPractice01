@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_11/section_01" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/com/chapter_11/section_02" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (pythonFromIntroductionToPractice01)" jdkType="Python SDK" />
