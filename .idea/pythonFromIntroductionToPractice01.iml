@@ -6,6 +6,9 @@
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_11/section_01" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_11/section_02" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_03" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/com/images" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_04" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/com" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (pythonFromIntroductionToPractice01)" jdkType="Python SDK" />

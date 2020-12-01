@@ -21,7 +21,7 @@ import pygame
 from settings import Settings
 
 
-def run_gane():
+def run_game():
     # 初始化游戏并创建一个屏幕对象
     pygame.init()
     ai_settings = Settings()
@@ -42,4 +42,4 @@ def run_gane():
         pygame.display.flip()
 
 
-run_gane()
+run_game()
