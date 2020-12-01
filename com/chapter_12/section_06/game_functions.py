@@ -7,7 +7,10 @@
 # @File    : game_functions.py
 # @Software: PyCharm
 
-# 相应按键
+# 响应按键
+# 修改了游戏在玩家按下右箭头键时响应的方式：
+#   不直接调整飞船的位置，而只是将moving_right 设置为True 。
+#   添加了一个新的elif 代码块，用 于响应KEYUP 事件：玩家松开右箭头键（K_RIGHT ）时，我们将moving_right 设置为False 。
 
 
 import sys
@@ -22,7 +25,10 @@ def check_events(ship):
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_RIGHT:
                 # 向右移动飞船,2个像素
-                ship.rect.centerx += 2
+                ship.moving_right = True
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_RIGHT:
+                ship.moving_right = False
 
 
 def update_screen(ai_settings, screen, ship):
