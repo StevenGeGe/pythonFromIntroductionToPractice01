@@ -11,6 +11,7 @@
 # 高：600像素
 # pygame.display.flip(): 绘制一个空屏幕，并擦去旧屏幕，使得只有新屏幕可见.
 #   将不断更新屏幕，以显示元素的新位置，并在原来的位置隐藏元素，从而营造平滑移动的效果。
+# screen.fill(): 用背景色填充屏幕；只接受一个实参：一种颜色。
 
 import sys
 import pygame
@@ -25,12 +26,19 @@ def run_gane():
     screen = pygame.display.set_mode((screen_width, screen_height))
     pygame.display.set_caption("Alien invasion")
 
+    # 设置背景色
+    bg_color = (230, 230, 230)
+
     # 开始游戏的主循环
     while True:
         # 监视键盘和鼠标事件
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+
+        # 每次循环时都重绘屏幕
+        screen.fill(bg_color)
+
         # 让最近绘制的屏幕可见
         pygame.display.flip()
 
