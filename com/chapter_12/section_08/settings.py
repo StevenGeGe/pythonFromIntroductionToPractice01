@@ -21,10 +21,10 @@ class Settings:
         self.screen_height = 600
         self.bg_color = (230, 230, 250)
         # 飞船的速度，移动1.5像素
-        self.ship_speed_factor = 1.5
+        self.ship_speed_factor = 0.4
         # 子弹设置
         #  宽3像素，高15像素，深灰色子弹。子弹速度比飞船速度稍低
-        self.bullet_speed_factor = 1
+        self.bullet_speed_factor = 0.4
         self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = 60, 60, 60

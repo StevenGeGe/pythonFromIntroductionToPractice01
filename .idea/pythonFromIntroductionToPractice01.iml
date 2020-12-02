@@ -5,11 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_11/section_01" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_11/section_02" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_03" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_04/images" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_04" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_05" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_06" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_08" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_08/images" isTestSource="false" />
@@ -17,6 +14,13 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7 (pythonFromIntroductionToPractice01)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/com/chapter_12/section_06" />
+      </list>
+    </option>
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
