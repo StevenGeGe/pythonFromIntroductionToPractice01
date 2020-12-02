@@ -27,13 +27,11 @@ class Bullet(Sprite):
         self.rect = pygame.Rect(0, 0,
                                 ai_settings.bullet_width,
                                 ai_settings.bullet_height)
-        self.rect.centerx = ship.rect.centerx
         # 将表示子弹的rect 的top 属性设置为飞船的rect 的top 属性，让子弹看 起来像是从飞船中射出的
+        self.rect.centerx = ship.rect.centerx
         self.rect.top = ship.rect.top
-
-        # 存储用小数表示的子弹位置
+        # 存储用小数表示的子弹位置, 以便后期微调，存储子弹颜色和速度
         self.y = float(self.rect.y)
-
         self.color = ai_settings.bullet_color
         self.speed_factor = ai_settings.bullet_speed_factor
 
@@ -43,7 +41,7 @@ class Bullet(Sprite):
         # 让我们能够随着游戏的进行或根据需要提高子弹的速度，以调整游戏的行 为。
         self.y -= self.speed_factor
         # 更新表示子弹的rect的位置
-        self.rect.y = self.y
+        self.rect.centery = self.y
         # 子弹发射后，其 x 坐标始终不变，因此子弹将沿直线垂直地往上穿行。
 
     def draw_bullet(self):

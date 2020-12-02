@@ -19,14 +19,14 @@ class Settings:
         """初始化游戏的设置"""
         self.screen_width = 1000
         self.screen_height = 600
-        self.bg_color = (230, 230, 250)
+        self.bg_color = (230, 230, 230)
         # 飞船的速度，移动1.5像素
         self.ship_speed_factor = 0.4
         # 子弹设置
         #  宽3像素，高15像素，深灰色子弹。子弹速度比飞船速度稍低
-        self.bullet_speed_factor = 0.4
+        self.bullet_speed_factor = 0.3
         self.bullet_width = 3
         self.bullet_height = 15
-        self.bullet_color = 60, 60, 60
+        self.bullet_color = 60, 60, 10
         # 将未消失的子弹数限制为3颗
-        self.bullets_allowed = 3
+        self.bullets_allowed = 1000
