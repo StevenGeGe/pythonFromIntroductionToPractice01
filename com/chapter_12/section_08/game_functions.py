@@ -27,9 +27,13 @@ def check_keydown_events(event, ai_settings, screen, ship, bullets):
         ship.moving_left = True
     elif event.key == pygame.K_SPACE:
         # 创建一颗子弹，并将其加入到编组bullets中
-        # 玩家按空格键时，创建一颗新子弹
-        new_bullet = Bullet(ai_settings, screen, ship)
-        bullets.add(new_bullet)
+        # 如果len(bullets) 小于3，我们就创建一个新子弹；
+        #   但如果已有3颗未消失的子弹，则玩家按空格键时什么都不会发生。
+        #   如果你 现在运行这个游戏，屏幕上最多只能有3颗子弹。
+        if len(bullets) < ai_settings.bullets_allowded:
+            # 玩家按空格键时，创建一颗新子弹
+            new_bullet = Bullet(ai_settings, screen, ship)
+            bullets.add(new_bullet)
 
 
 def check_keyup_events(event, ai_settings, screen, ship, bullet):

@@ -11,7 +11,8 @@
 # 调整飞船移动速度
 # 设置子弹
 
-class Settings():
+
+class Settings:
     """存储《外星人入侵》的所有设置的类"""
 
     def __init__(self):
@@ -27,3 +28,5 @@ class Settings():
         self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = 60, 60, 60
+        # 将未消失的子弹数限制为3颗
+        self.bullet_allowed = 3
