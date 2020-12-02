@@ -33,14 +33,7 @@ def run_game():
         # 监视键盘和鼠标事件
         gf.check_events(ai_settings, screen, ship, bullets)
         ship.update()
-        bullets.update()
-        # 删除已消失的子弹
-        # 在for 循环中，不应从列表或编组中删除条目，因此必须遍历编组的副本。
-        # 我们使用了方法copy() 来设置for 循环
-        for bullet in bullets.copy():
-            if bullet.rect.bottom <= 0:
-                bullets.remove(bullet)
-        print(len(bullets))
+        gf.update_bullets(bullets)
         # 每次循环时都重绘屏幕
         gf.update_screen(ai_settings, screen, ship, bullets)
 
