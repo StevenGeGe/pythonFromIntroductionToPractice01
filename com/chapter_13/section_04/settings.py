@@ -30,3 +30,5 @@ class Settings:
         self.bullet_color = 60, 60, 10
         # 将未消失的子弹数限制为3颗
         self.bullets_allowed = 1000
+        # 外星人设置
+        self.alien_speed_factor = 1
