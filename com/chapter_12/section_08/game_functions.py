@@ -46,7 +46,6 @@ def check_keyup_events(event, ai_settings, screen, ship, bullet):
         ship.moving_up = False
 
 
-
 def check_events(ai_settings, screen, ship, bullets):
     """响应按键和鼠标事件"""
     for event in pygame.event.get():
@@ -68,6 +67,8 @@ def update_screen(ai_settings, screen, ship, bullets):
     # 在飞船和外星人后面重绘所有子弹
     for bullet in bullets.sprites():
         bullet.draw_bullet()
+        # ship.bitme
+    pygame.display.flip()
 
 
 def update_bullets(bullets):
@@ -81,7 +82,7 @@ def update_bullets(bullets):
         # 如果子弹到顶端则删除
         if bullet.rect.bottom <= 0:
             bullets.remove(bullet)
-        print(len(bullets))  # 打印输出剩余的子弹数量
+        # print(len(bullets))  # 打印输出剩余的子弹数量
 
 
 def fire_bullet(ai_settings, screen, ship, bullets):
