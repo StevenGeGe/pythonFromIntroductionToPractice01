@@ -55,6 +55,6 @@ class Ship:
         self.rect.centerx = self.centerx
         self.rect.centery = self.centery
 
-    def bitme(self):
+    def blitme(self):
         """在指定位置绘制飞船"""
         self.screen.blit(self.image, self.rect)
