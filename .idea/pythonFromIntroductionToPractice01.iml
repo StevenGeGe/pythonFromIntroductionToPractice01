@@ -10,8 +10,6 @@
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_06" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_08" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_12/section_08/images" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/com/chapter_13/section_01" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/com/chapter_13/section_04" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/com/chapter_14/section_01" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
