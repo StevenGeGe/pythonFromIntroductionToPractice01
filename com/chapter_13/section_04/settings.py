@@ -24,7 +24,7 @@ class Settings:
         self.ship_speed_factor = 0.5
         # 子弹设置
         #  宽3像素，高15像素，深灰色子弹。子弹速度比飞船速度稍低
-        self.bullet_speed_factor = 0.4
+        self.bullet_speed_factor = 3
         self.bullet_width = 3
         self.bullet_height = 15
         self.bullet_color = 60, 60, 10
