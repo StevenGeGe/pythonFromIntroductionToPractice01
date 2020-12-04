@@ -75,7 +75,7 @@ def update_screen(ai_settings, screen, ship, aliens, bullets):
     pygame.display.flip()
 
 
-def update_bullets(aliens, bullets):
+def update_bullets(ai_settings, screen, ship, aliens, bullets):
     """
     更新子弹的位置，并删除已消失的子弹
     每当有子弹和外星人的rect 重叠时，groupcollide() 就在它返回的字典中添加一 个键-值对。
@@ -97,6 +97,12 @@ def update_bullets(aliens, bullets):
     # 检查是否有子弹击中了外星人
     # 如果是这样，就删除相应的子弹和外星人
     collisions = pygame.sprite.groupcollide(bullets, aliens, False, True)
+    if len(aliens) == 0:
+        # 删除现有的子弹并新建一群外星人
+        bullets.empty()
+        create_fleet(ai_settings, screen, ship, aliens)
+
+
 
 
 def fire_bullet(ai_settings, screen, ship, bullets):
