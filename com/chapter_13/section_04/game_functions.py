@@ -96,6 +96,12 @@ def update_bullets(ai_settings, screen, ship, aliens, bullets):
         # print(len(bullets))  # 打印输出剩余的子弹数量
     # 检查是否有子弹击中了外星人
     # 如果是这样，就删除相应的子弹和外星人
+    check_bullet_alien_collisions(ai_settings, screen, ship, aliens, bullets)
+
+
+def check_bullet_alien_collisions(ai_settings, screen, ship, aliens, bullets):
+    # 检查是否有子弹击中了外星人
+    # 如果是这样，就删除相应的子弹和外星人
     collisions = pygame.sprite.groupcollide(bullets, aliens, False, True)
     if len(aliens) == 0:
         # 删除现有的子弹并新建一群外星人
