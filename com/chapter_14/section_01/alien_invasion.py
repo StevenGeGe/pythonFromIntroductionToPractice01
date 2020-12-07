@@ -17,6 +17,7 @@ from ship import Ship
 from alien import Alien
 from button import Button
 from game_stats import GameStats
+from scoreboard import Scoreboard
 import game_functions as gf
 
 
@@ -41,6 +42,9 @@ def run_game():
 
     # 创建外星人群
     gf.create_fleet(ai_settings=ai_settings, screen=screen, ship=ship, aliens=aliens)
+    # 创建存储游戏统计信息的实例，并创建记分牌
+    stats = GameStats(ai_settings)
+    sb = Scoreboard(ai_settings, screen, stats)
 
     # 开始游戏的主循环
     while True:
@@ -55,7 +59,7 @@ def run_game():
             gf.update_aliens(ai_settings=ai_settings, stats=stats, screen=screen,
                              ship=ship, aliens=aliens, bullets=bullets)
         # 每次循环时都重绘屏幕
-        gf.update_screen(ai_settings=ai_settings, screen=screen, stats=stats,
+        gf.update_screen(ai_settings=ai_settings, screen=screen, stats=stats, sb=sb,
                          ship=ship, aliens=aliens, bullets=bullets, play_button=play_button)
 
 
