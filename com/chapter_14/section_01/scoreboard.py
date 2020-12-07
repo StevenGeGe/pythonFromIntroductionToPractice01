@@ -10,7 +10,7 @@
 import pygame.font
 
 
-class Scoreboard():
+class Scoreboard:
     """显示得分信息的类"""
 
     def __init__(self, ai_settings, screen, stats):
