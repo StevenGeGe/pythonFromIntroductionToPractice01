@@ -24,8 +24,8 @@ class Settings:
         self.ship_limit = 3
         # 子弹设置
         #  宽3像素，高15像素，深灰色子弹。子弹速度比飞船速度稍低
-        self.bullet_width = 3
-        self.bullet_height = 15
+        self.bullet_width = 2
+        self.bullet_height = 10
         self.bullet_color = 60, 60, 10
         # 将未消失的子弹数限制为3颗
         self.bullets_allowed = 3
