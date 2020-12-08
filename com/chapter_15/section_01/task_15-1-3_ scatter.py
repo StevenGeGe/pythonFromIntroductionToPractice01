@@ -13,5 +13,21 @@
 
 import matplotlib.pyplot as plt
 
-plt.scatter(2, 4)
+# 解决中文乱码
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['axes.unicode_minus'] = False
+
+plt.scatter(2, 4, s=200)
+
+# 设置图表标题
+plt.title("平方数散点图", fontsize=24)
+
+# 给坐标轴加上标签
+plt.xlabel("数值", fontsize=14)
+plt.ylabel("平方", fontsize=14)
+
+# 设置刻度标记大小
+plt.tick_params(axis="both", which="major", labelsize=14)
+
+# 散点图表展示
 plt.show()
