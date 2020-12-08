@@ -27,7 +27,10 @@ plt.rcParams['axes.unicode_minus'] = False
 # 自动计算数据
 x_values = list(range(1, 1001))
 y_values = [x ** 2 for x in x_values]
-plt.scatter(x_values, y_values, s=200)
+# edgecolor='none': 删除数据点的轮廓
+plt.scatter(x_values, y_values, edgecolor='none', s=10)
+# plt.scatter(x_values, y_values, s=10)
+
 
 # 设置图表标题
 plt.title("平方数散点图", fontsize=24)
