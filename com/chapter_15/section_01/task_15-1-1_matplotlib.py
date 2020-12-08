@@ -23,6 +23,17 @@
 import matplotlib.pyplot as plt
 
 squares = [1, 4, 9, 16, 25]
+# 避免中文显示乱码
+plt.rcParams['font.sans-serif'] = ['SimHei']
+plt.rcParams['axes.unicode_minus'] = False
 
-plt.plot(squares)
+plt.plot(squares, linewidth=5)
+# 设置图标标题，并给坐标轴加上标签
+plt.title("简易数据", fontsize=24)
+plt.xlabel("数值", fontsize=14)
+plt.ylabel("平方值", fontsize=14)
+
+# 设置刻度标记大小
+plt.tick_params(axis="both", labelsize=14)
+
 plt.show()
