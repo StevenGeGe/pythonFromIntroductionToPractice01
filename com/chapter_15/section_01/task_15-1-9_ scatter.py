@@ -44,7 +44,6 @@ y_values = [x ** 2 for x in x_values]
 # 颜色映射
 plt.scatter(x_values, y_values, c=y_values, cmap=plt.cm.Blues, edgecolor='none', s=40)
 
-
 # 设置图表标题
 plt.title("平方数散点图", fontsize=24)
 
