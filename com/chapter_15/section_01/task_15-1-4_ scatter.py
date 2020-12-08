@@ -10,6 +10,8 @@
 # scatter(): 绘制散点图并设置样式
 # 传递一对，x和y坐标，它将在指定位置绘制一个点。
 
+# 绘制一系列的点， 只需要传递两个包含x和y值的列表。
+
 
 import matplotlib.pyplot as plt
 
@@ -17,7 +19,12 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 
-plt.scatter(2, 4, s=200)
+# 单个散点
+# plt.scatter(2, 4, s=200)
+# 多个散点
+x_values = [1, 2, 3, 4, 5]
+y_values = [1, 4, 9, 16, 25]
+plt.scatter(x_values, y_values, s=200)
 
 # 设置图表标题
 plt.title("平方数散点图", fontsize=24)
