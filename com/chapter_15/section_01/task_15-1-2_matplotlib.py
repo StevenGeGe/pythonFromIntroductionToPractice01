@@ -20,16 +20,24 @@
 # 8、plt.show() 打开matplotlib查看器，并 显示绘制的图形。
 # 9、查看器让你能够缩放和导航图形，另外，单击磁盘图标可将图形保存起来。
 
+# 10、向plot()默认将提供的数字，第一个数据点对应的x 坐标值为0。
+#       可以同时提供输入和输出值。
+
 import matplotlib.pyplot as plt
 
+input_values = [1, 2, 3, 4, 5]
 squares = [1, 4, 9, 16, 25]
 # 避免中文显示乱码
 plt.rcParams['font.sans-serif'] = ['SimHei']
 plt.rcParams['axes.unicode_minus'] = False
 
-plt.plot(squares, linewidth=5)
+# 只提供输出, 会导致 最后4 对应的是25
+# plt.plot(squares, linewidth=5)
+# 提供输入和输出值
+plt.plot(input_values, squares, linewidth=5)
+
 # 设置图标标题，并给坐标轴加上标签
-plt.title("简易数据", fontsize=24)
+plt.title("简易数据折线图", fontsize=24)
 plt.xlabel("数值", fontsize=14)
 plt.ylabel("平方值", fontsize=14)
 
