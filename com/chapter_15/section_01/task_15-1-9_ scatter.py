@@ -17,6 +17,9 @@
 # 2、在可视化中，颜色映射用于突出数据的规律。
 #   你可能用较浅的颜色来显示较小的值，并使用较深 的颜色来显示较大的值。
 
+# 自动保存图表
+# plt.savefig()
+
 import matplotlib.pyplot as plt
 
 # 解决中文乱码
@@ -58,4 +61,6 @@ plt.tick_params(axis="both", which="major", labelsize=14)
 plt.axis([0, 1100, 0, 1100000])
 
 # 散点图表展示
+# 保存的图表一定要在展示前面，不然会保存空的图表
+plt.savefig('squares_plot.png', bbox_inches='tight')
 plt.show()
