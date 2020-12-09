@@ -16,7 +16,11 @@ while True:
     # 创建一个RandomWalk实例，并将其包含的点都绘制出
     rw = RandomWalk()
     rw.fill_walk()
-    plt.scatter(rw.x_values, rw.y_values, s=15)
+
+    point_numbers = list(range(rw.num_points))
+    # 使用颜色映射来指出漫步中各点的先后顺序，并删除每个点的黑色轮廓，让它们的颜色更明显.
+    plt.scatter(rw.x_values, rw.y_values, c=point_numbers,
+                cmap=plt.cm.Blues, edgecolors='none', s=15)
     plt.show()
 
     keep_running = input("Make another walk？(y/n)")
