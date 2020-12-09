@@ -21,6 +21,10 @@ while True:
     # 使用颜色映射来指出漫步中各点的先后顺序，并删除每个点的黑色轮廓，让它们的颜色更明显.
     plt.scatter(rw.x_values, rw.y_values, c=point_numbers,
                 cmap=plt.cm.Blues, edgecolors='none', s=15)
+    # 重新绘制起点和终点，并突出起点和终点
+    plt.scatter(0, 0, c='green', edgecolors='none', s=100)
+    plt.scatter(rw.x_values[-1], rw.y_values[-1], c='red', edgecolors='none', s=100)
+
     plt.show()
 
     keep_running = input("Make another walk？(y/n)")
