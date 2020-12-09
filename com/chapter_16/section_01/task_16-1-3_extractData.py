@@ -22,5 +22,7 @@ with open(file_name) as file_object:
     highs = []
     # 按行读取， 然后选取每行的第六个元素
     for row in reader:
-        highs.append(row[5])
+        # 转换成数字
+        high = int(row[5])
+        highs.append(high)
     print(highs)
